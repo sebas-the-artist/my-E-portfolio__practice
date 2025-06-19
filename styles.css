@@ -75,7 +75,7 @@ nav {
   border: 2px dotted plum;
 }
 .personal__logo {
-  color: rgba(255, 222, 255);
+  color: rgb(121, 121, 121);
   margin: 0 12px;
   font-size: 32px;
   font-weight: bold;
@@ -116,4 +116,10 @@ nav {
 }
 .about-me__info--container {
   text-align: center;
+}
+.about-me__link {
+  font-size: 32px;
+  color: plum;
+  text-decoration: none;
+  margin: 0 2%;
 }
