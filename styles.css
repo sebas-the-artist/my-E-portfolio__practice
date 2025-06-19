@@ -88,6 +88,7 @@ nav {
   margin: 0 12px;
   font-size: 32px;
   font-weight: bold;
+  animation: float 10ms infinite backwards;
 }
 
 /* about me section*/
@@ -110,7 +111,7 @@ nav {
 }
 @keyframes float {
   0% {
-    transform: translateY(24px);
+    transform: translateY(32px);
   }
   100% {
     transform: translateY(0px);
@@ -149,12 +150,11 @@ nav {
   color: plum;
   text-decoration: none;
   margin: 0 5%;
-  padding-right: 3px;
   cursor: grab;
 }
 .about-me__link:hover {
   color: rgba(236, 67, 109, 0.838);
-  transform: scale(2);
+  transform: scale(0.9);
 }
 
 .about-me__img--container {
