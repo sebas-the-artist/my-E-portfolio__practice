@@ -106,6 +106,10 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+}
 
 .about-me__info--title {
   font-size: 32px;
@@ -119,7 +123,17 @@ nav {
 }
 .about-me__link {
   font-size: 32px;
-  color: plum;
+  color: rgba(236, 67, 109, 0.838);
   text-decoration: none;
   margin: 0 2%;
+}
+.about-me__img--container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 0;
+}
+.about-me__img {
+  width: 100%;
 }
