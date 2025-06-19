@@ -24,6 +24,17 @@ p {
 li {
   list-style-type: none;
 }
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 /*navigation bar*/
 
@@ -32,7 +43,7 @@ nav {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 3%;
+  padding: 6% 3% 3% 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,19 +75,45 @@ nav {
   border: 2px dotted plum;
 }
 .personal__logo {
-  color: rgb(255, 222, 255);
+  color: rgba(255, 222, 255);
   margin: 0 12px;
   font-size: 32px;
   font-weight: bold;
 }
+
+/* about me section*/
 .about-me__picture {
-  width: 20%;
-  transform: scale(0.5);
-  padding-top: 2px;
-}
-.about-me__info--title {
-  font-size: 32px;
+  width: 16%;
+  height: 16%;
+  transform: scale(1.07);
+  margin: 1% 0% 3% 1%;
+  border-radius: 77%;
+  border: 3px solid rgb(11, 11, 11);
+  cursor: grab;
+  overflow: hidden;
+  box-shadow: 16px 16px 24px rgba(0, 0, 0, 0.4);
 }
 .personal-bio {
-  font-size: 25px;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+.text--purple {
+  color: plum;
+  padding-left: 2px;
+}
+#about-me {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info--title {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+}
+.about-me__info--container {
+  text-align: center;
 }
