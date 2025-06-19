@@ -30,12 +30,20 @@ li {
 .flex-1 {
   flex: 1;
 }
+.container {
+  padding: 50px 0;
+}
+.section__title {
+  margin-bottom: 5%;
+}
 .row {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
-
+section:nth-child(odd) {
+  background-color: lightgray;
+}
 /*navigation bar*/
 
 nav {
@@ -122,18 +130,37 @@ nav {
   text-align: center;
 }
 .about-me__link {
-  font-size: 32px;
-  color: rgba(236, 67, 109, 0.838);
+  font-size: 40px;
+  color: plum;
   text-decoration: none;
-  margin: 0 2%;
+  margin: 0 5%;
+  padding-right: 3px;
+  cursor: grab;
 }
+.about-me__link:hover {
+  color: rgba(236, 67, 109, 0.838);
+}
+
 .about-me__img--container {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10% 0;
+  margin: 8% 0%;
 }
 .about-me__img {
   width: 100%;
+}
+
+/* TECH - STACK*/
+
+.language__img {
+  width: 100vw;
+  max-width: 600px;
+}
+.language__img--wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
