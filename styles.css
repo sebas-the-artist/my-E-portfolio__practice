@@ -196,18 +196,11 @@ nav {
 .project__img {
   box-shadow: 0 16px 64px;
   width: 70%;
-  margin-bottom: 10%;
+  margin: 7% 0;
   border-radius: 70px;
   overflow: hidden;
   transition: all 200ms ease;
 }
 .project__img:hover {
   transform: scale(1.2);
-}
-.footer__div {
-  background-color: lightgray;
-  font-size: 24px;
-  color: lightslategray;
-  display: flex;
-  justify-content: space-between;
 }
