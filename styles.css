@@ -88,7 +88,6 @@ nav {
   margin: 0 12px;
   font-size: 32px;
   font-weight: bold;
-  animation: float 10ms infinite backwards;
 }
 
 /* about me section*/
@@ -125,6 +124,10 @@ nav {
   color: plum;
   padding-left: 2px;
 }
+.text--purple:hover {
+  transform: scale(1.01);
+  cursor: crosshair;
+}
 #about-me {
   min-height: 100vh;
   display: flex;
@@ -151,10 +154,10 @@ nav {
   text-decoration: none;
   margin: 0 5%;
   cursor: grab;
+  transition: all 600ms ease;
 }
 .about-me__link:hover {
   color: rgba(236, 67, 109, 0.838);
-  transform: scale(0.9);
 }
 
 .about-me__img--container {
@@ -171,7 +174,7 @@ nav {
 /* TECH - STACK*/
 
 .language__img {
-  width: 100vw;
+  width: 100%;
   max-width: 600px;
 }
 .language__img--wrapper {
@@ -179,6 +182,7 @@ nav {
   text-align: center;
   justify-content: center;
   align-items: center;
+  animation: float 1000ms infinite alternate-reverse;
 }
 
 /* PROJECTS */
@@ -192,4 +196,10 @@ nav {
   box-shadow: 0 16px 64px;
   width: 70%;
   margin-bottom: 10%;
+  border-radius: 70px;
+  overflow: hidden;
+  transition: all 200ms ease;
+}
+.project__img:hover {
+  transform: scale(1.2);
 }
