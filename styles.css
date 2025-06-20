@@ -116,6 +116,14 @@ nav {
     transform: translateY(0px);
   }
 }
+@keyframes slide {
+  0% {
+    transform: translateX(25vw);
+  }
+  100% {
+    transform: translateX(50vw);
+  }
+}
 .personal-bio {
   font-size: 24px;
   margin-bottom: 28px;
@@ -203,4 +211,23 @@ nav {
 }
 .project__img:hover {
   transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(9, 9, 9);
+  height: 50vh;
+}
+.sm-logos {
+  text-align: center;
+}
+
+.sm-logo {
+  animation: float 2700ms infinite alternate;
+  width: 20%;
+  transform: scale(0.5);
+}
+.sm-logo:hover {
+  transform: scale(0.59);
+  filter: opacity(80%);
 }
