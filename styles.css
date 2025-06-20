@@ -125,8 +125,9 @@ nav {
   padding-left: 2px;
 }
 .text--purple:hover {
-  transform: scale(1.01);
+  transform: scale(1.015);
   cursor: crosshair;
+  overflow: hidden;
 }
 #about-me {
   min-height: 100vh;
@@ -190,8 +191,8 @@ nav {
   text-align: center;
 }
 .project__wrapper {
-  /*box-shadow: 0 28px 88px;*/
 }
+
 .project__img {
   box-shadow: 0 16px 64px;
   width: 70%;
@@ -202,4 +203,11 @@ nav {
 }
 .project__img:hover {
   transform: scale(1.2);
+}
+.footer__div {
+  background-color: lightgray;
+  font-size: 24px;
+  color: lightslategray;
+  display: flex;
+  justify-content: space-between;
 }
