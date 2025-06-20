@@ -136,6 +136,17 @@ nav {
 .personal-bio {
   font-size: 24px;
   margin-bottom: 28px;
+  animation: fade-up 2500ms ease;
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .text--purple {
   color: plum;
@@ -172,6 +183,8 @@ nav {
   font-size: 32px;
   display: flex;
   justify-content: center;
+  animation: fade-up 1900ms ease;
+
   /*flex-direction: column;*/
   /*align-items: center;*/
 }
@@ -199,6 +212,7 @@ nav {
 }
 .about-me__img {
   width: 100%;
+  animation: fade-up 2000ms 50ms ease;
 }
 
 /* TECH - STACK*/
@@ -328,5 +342,8 @@ footer {
   }
   .nav__link {
     display: none;
+  }
+  .language__img--wrapper {
+    width: 94%;
   }
 }
